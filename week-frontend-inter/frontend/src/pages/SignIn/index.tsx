@@ -8,8 +8,11 @@ import Card from '../../components/Card';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
+import useAuth from '../../hooks/userAuth'
+
 const SignIn = () => {
     const navigate = useNavigate();
+    const {signIn} = useAuth()
 
     const handleToSingIn = () => {
         navigate('/dashboard')
